@@ -51,6 +51,7 @@
         "EAS_BUILD_PROFILE": "versioned-client-signed"
       },
       "android": {
+        "withoutCredentials": false,
         "gradleCommand": ":app:bundleVersionedRelease"
       },
       "ios": {

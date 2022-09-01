@@ -8,21 +8,7 @@ if [ "$EAS_BUILD_PLATFORM" = "android" ]; then
   sudo apt-get -y update
   sudo apt-get -y install ruby icu-devtools libicu66 libicu-dev maven
   sdkmanager "cmake;3.10.2.4988404"
-elif [ "$EAS_BUILD_PLATFORM" = "ios" ]; then
-  HOMEBREW_NO_INSTALL_CLEANUP=1 HOMEBREW_NO_AUTO_UPDATE=1 brew install direnv
 fi
-
-mkdir -p ~/.config/direnv
-cat << EOF > ~/.config/direnv/direnv.toml
-[whitelist]
-prefix = [ "/home/expo", "/Users/expo" ]
-EOF
-
-# fallback for old direnv version
-cat << EOF > ~/.config/direnv/config.toml
-[whitelist]
-prefix = [ "/home/expo", "/Users/expo" ]
-EOF
 
 cat << EOF > $ROOT_DIR/.gitmodules
 [submodule "docs/react-native-website"]
