@@ -58,7 +58,7 @@ Now, to run your build run `eas build -p android --profile preview`. Remember th
 - Open the URL on your device, install the APK and run it.
 
 #### Install with `adb`
-
+dfadsfadsfadsfasdfasdfasdfasdfsa
 - [Install adb](https://developer.android.com/studio/command-line/adb) if you don't have it installed already.
 - Connect your device to your computer and [enable adb debugging on your device](https://developer.android.com/studio/command-line/adb#Enabling) if you haven't already.
 - Once your build is completed, download the APK from the build details page or the link provided when `eas build` is done.
